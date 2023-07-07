@@ -11,18 +11,18 @@ const GenreCard = ({ genre }: Props) => {
       direction={{ base: "column", sm: "row" }}
       overflow="hidden"
       variant="outline"
-      maxW="300px"
-      margin="10px"
+      marginBottom="10px"
+      marginLeft="10px"
     >
       <Image
         objectFit="cover"
-        maxW="25%"
-        maxH={"80%"}
+        maxW="20%"
+        maxH="90%"
         src={genre.image_background}
-        alt="Caffe Latte"
+        alt="Error"
       />
       <CardBody>
-        <Heading size="md">{genre.name}</Heading>
+        <Heading size="20px">{genre.name}</Heading>
       </CardBody>
     </Card>
   );

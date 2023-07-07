@@ -50,7 +50,7 @@ interface Props {
 const GameCard = ({ game }: Props) => {
   return (
     <>
-      <Card borderRadius="lg" w="350px" h="300px">
+      <Card borderRadius="lg" h="300px">
         <Image
           src={getCroppedImage(game.background_image)}
           borderRadius="lg"
@@ -60,7 +60,7 @@ const GameCard = ({ game }: Props) => {
           <Flex justify="space-between">
             <Flex>
               {game.parent_platforms.map(({ platform }) => (
-                <Flex marginRight="10px">
+                <Flex marginRight="5%" overflow="hidden">
                   {generatePlatformIcon(platform.name)}
                 </Flex>
               ))}
